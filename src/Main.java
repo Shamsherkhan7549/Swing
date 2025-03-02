@@ -38,7 +38,7 @@ public class Main {
 
         // Create a button
         JButton button = new JButton();
-            button.setText("Submit");
+            //button.setText("Submit");
 //            button.setBounds();
 
         frame.add(ProductId);
