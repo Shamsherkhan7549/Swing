@@ -1,6 +1,4 @@
-import javax.swing.*;
-import java.awt.*;
-import java.awt.Container;
+package SwingConcepts;
 
 
 public class JTablaDemo {

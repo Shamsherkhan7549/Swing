@@ -1,3 +1,5 @@
+package SwingConcepts;
+
 import javax.swing.*;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;

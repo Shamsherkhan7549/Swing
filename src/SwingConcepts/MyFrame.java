@@ -1,3 +1,5 @@
+package SwingConcepts;
+
 import javax.swing.*;
 import javax.swing.JFrame;
 import java.awt.*;
