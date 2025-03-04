@@ -3,17 +3,17 @@ package SwingConcepts;
 import javax.swing.*;
 import java.awt.*;
 
-public class SwingConcepts {
+public class BorderLayoutDemo {
     public static void main(String[] args){
         //  Layout Manager:-> Defines the natural layout for component within a container
 
         // 3 Common Managers
-        //BorderLayout:-> A BorderLayout places components in five areas: NORTH, SOUTH, WEST, EAST, CENTER
+        //BorderLayoutDemo:-> A BorderLayoutDemo places components in five areas: NORTH, SOUTH, WEST, EAST, CENTER
                         // All extra space is places in the center area.
 
         JFrame  frame = new JFrame();
         frame.setSize(500, 500);
-        frame.setLayout(new BorderLayout(10,10));
+        frame.setLayout(new java.awt.BorderLayout(10,10));
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         JPanel orangePanel = new JPanel();
@@ -47,13 +47,13 @@ public class SwingConcepts {
         lightgrayPanel.setPreferredSize(new Dimension(50,50));
         whitePanel.setPreferredSize(new Dimension(50,50));
 
-        magentaPanel.setLayout(new BorderLayout());
+        magentaPanel.setLayout(new java.awt.BorderLayout());
 
-        magentaPanel.add(pinkPanel, BorderLayout.NORTH);
-        magentaPanel.add(yellowPanel, BorderLayout.SOUTH);
-        magentaPanel.add(grayPanel, BorderLayout.WEST);
-        magentaPanel.add(lightgrayPanel, BorderLayout.EAST);
-        magentaPanel.add(whitePanel, BorderLayout.CENTER);
+        magentaPanel.add(pinkPanel, java.awt.BorderLayout.NORTH);
+        magentaPanel.add(yellowPanel, java.awt.BorderLayout.SOUTH);
+        magentaPanel.add(grayPanel, java.awt.BorderLayout.WEST);
+        magentaPanel.add(lightgrayPanel, java.awt.BorderLayout.EAST);
+        magentaPanel.add(whitePanel, java.awt.BorderLayout.CENTER);
 
         /*---------------------sub panels----------------------------------*/
 
@@ -64,11 +64,11 @@ public class SwingConcepts {
         magentaPanel.setPreferredSize(new Dimension(100,100));
 
 
-        frame.add(orangePanel, BorderLayout.NORTH);
-        frame.add(redPanel, BorderLayout.WEST);
-        frame.add(greenPanel, BorderLayout.SOUTH);
-        frame.add(bluePanel, BorderLayout.EAST);
-        frame.add(magentaPanel, BorderLayout.CENTER);
+        frame.add(orangePanel, java.awt.BorderLayout.NORTH);
+        frame.add(redPanel, java.awt.BorderLayout.WEST);
+        frame.add(greenPanel, java.awt.BorderLayout.SOUTH);
+        frame.add(bluePanel, java.awt.BorderLayout.EAST);
+        frame.add(magentaPanel, java.awt.BorderLayout.CENTER);
        // frame.setLayout(null);
         frame.setVisible(true);
     }

@@ -19,19 +19,16 @@ public class JPanelDemo {
         JPanel redPanel = new JPanel();
         redPanel.setBackground(new Color(255,0,0));
         redPanel.setBounds(0,0,350, 350);
-        redPanel.setLayout(new BorderLayout());
         redPanel.add(label);
 
         JPanel bluePanel = new JPanel();
         bluePanel.setBackground(Color.blue);
         bluePanel.setBounds(350,0, 350,350);
-        bluePanel.setLayout(new BorderLayout());
         //bluePanel.add(label);
 
         JPanel greenPanel = new JPanel();
         greenPanel.setBackground(Color.green);
         greenPanel.setBounds(0,350,700,350);
-        greenPanel.setLayout(new BorderLayout()); // this will allow to move component inside the panel
         //greenPanel.add(label);
 
         JFrame frame = new JFrame(); //Create Frame
